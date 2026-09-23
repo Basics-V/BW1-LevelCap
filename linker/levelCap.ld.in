@@ -1,0 +1,22 @@
+OUTPUT_FORMAT("elf32-littlearm")
+OUTPUT_ARCH(arm)
+
+#include "ARM9.h"
+#include "overlay_0093.h"
+
+GSYS_GetGameData      = ADDR_GSYS_GetGameData;
+GameData_GetEventData = ADDR_GameData_GetEventData;
+FUN_020143cc          = ADDR_FUN_020143cc;
+g_GameSystem          = ADDR_g_GameSystem;
+
+SECTIONS
+{
+    . = 0x02011168;
+    .FUN_02011168 : {
+        *(.FUN_02011168)
+    }
+    . = ADDR_AddExpAndEVs_0x238;
+    .AddExpAndEVs_0x238 : {
+        *(.AddExpAndEVs_0x238)
+    }
+}
