@@ -2,6 +2,7 @@
 // Authors: MCMi460
 
 #include "arm9.h"
+#include "util.h"
 
 #define levelCapEventWork 0x4049
 

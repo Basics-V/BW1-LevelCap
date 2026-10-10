@@ -37,6 +37,18 @@ Symbols:
   - Name: GetUserMemRegionDefaultStart
     Segment: 0x0
     Address: 0x2086694
+  - Name: vsnprintf
+    Segment: 0x0
+    Address: 0x20944CC
+  - Name: __aeabi_uidivmod
+    Segment: 0x0
+    Address: 0x209C2B0
+  - Name: __aeabi_uidiv
+    Segment: 0x0
+    Address: 0x209C2B0
+  - Name: __aeabi_uidivmod_impl
+    Segment: 0x0
+    Address: 0x209C2B8
   - Name: g_GameSystem
     Segment: 0x0
     Address: 0x2146248
