@@ -1,0 +1,45 @@
+Segments:
+  - ID: 0x0
+    Name: ARM9
+    Type: EXECUTABLE
+  - ID: 0x1
+    Name: OVL_93
+    Type: EXECUTABLE
+
+Symbols:
+  - Name: bwInjectBootCode
+    Segment: 0x0
+    Address: 0x200400D
+  - Name: main
+    Segment: 0x0
+    Address: 0x2005125
+  - Name: GFLAppInit
+    Segment: 0x0
+    Address: 0x200545D
+  - Name: PassPower_ApplyEXP
+    Segment: 0x0
+    Address: 0x2011169
+  - Name: GSYS_GetGameData
+    Segment: 0x0
+    Address: 0x20120F5
+  - Name: GameData_GetEventData
+    Segment: 0x0
+    Address: 0x201296D
+  - Name: EventWork_GetWkPtr
+    Segment: 0x0
+    Address: 0x20143CD
+  - Name: sys_load_overlay
+    Segment: 0x0
+    Address: 0x2079264
+  - Name: g_OvlMax
+    Segment: 0x0
+    Address: 0x2078EA8
+  - Name: GetUserMemRegionDefaultStart
+    Segment: 0x0
+    Address: 0x2086694
+  - Name: g_GameSystem
+    Segment: 0x0
+    Address: 0x2146248
+  - Name: AddExpAndEVs
+    Segment: 0x1
+    Address: 0x21CB2D5
