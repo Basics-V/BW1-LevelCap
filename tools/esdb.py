@@ -76,7 +76,8 @@ if __name__ == "__main__":
             seg_id = symbol["Segment"]
             break
 
-    assert address != 0
+    if address == 0:
+        raise ValueError("missing symbol for %s -- perhaps it is missing from %s?" % (sym, esdb))
 
     for segment in data["Segments"]:
         if seg_id == segment["ID"]:

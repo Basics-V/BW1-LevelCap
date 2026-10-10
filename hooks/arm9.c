@@ -24,7 +24,6 @@ void FULL_COPY_main_0x6(void) {
     );
 }
 
-
 __attribute__((naked, target("thumb"), aligned(2)))
 void FULL_COPY_GetUserMemRegionDefaultStart_0xB0(void) {
     __asm__ volatile (

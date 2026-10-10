@@ -20,7 +20,7 @@ srcs = $(wildcard $(vfs_dir)/*.c) $(wildcard $(ovl_dir)/*.c)
 objs = $(addprefix $(obj_dir)/, $(notdir $(srcs:.c=.o)))
 elfs = $(objs:.o=.elf)
 lnks = $(link_dir)/hooks.ld
-hdrs = $(wildcard $(incl_dir)/*.h) $(wildcard $(incl_dir)/overlay/*.c)
+hdrs = $(wildcard $(incl_dir)/*.h) $(wildcard $(incl_dir)/overlay/*.h)
 esdb = $(pmc_dir)/$(ROM_CODE).yml
 y9   = $(data_dir)/y9.json
 
